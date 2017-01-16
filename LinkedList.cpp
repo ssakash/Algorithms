@@ -118,5 +118,6 @@ int main()
 	list.Delete(200);
 	list.Delete(50);
 	list.Print();
+	system("pause");
 	return 0;
 }
