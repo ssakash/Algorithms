@@ -105,19 +105,33 @@ public:
 
 int main()
 {
-	linked_list list;
-	list.Insert(200);
-	list.Insert(50);
-	list.Insert(500);
-	list.Insert(100);
-	list.Insert(10);
-	list.Print();
-	list.Delete(100);
-	list.Print();
-	list.Insert(23);
-	list.Delete(200);
-	list.Delete(50);
-	list.Print();
+	linked_list list; int choice , variable; char exit = 'y';
+
+	while (exit == 'y' || exit == 'Y')
+	{
+		std::cout << "\nWhat do you want to do?\n";
+		std::cout << "1. Insert\n2. Delete\n3. Print\n";
+		std::cin >> choice;
+
+		if (choice == 1)
+		{
+			std::cout << "\n" << "What number do you want to insert?";
+			std::cin >> variable;
+			list.Insert(variable);
+		}
+
+		if (choice == 2)
+		{
+			std::cout << "\n" << "What number do you want to delete?";
+			std::cin >> variable;
+			list.Delete(variable);
+		}
+
+		if (choice == 3) list.Print();
+
+		std::cout << "Do you want to continue with more list operations? Y/N?\n";
+		std::cin >> exit;
+	}
 	system("pause");
 	return 0;
 }
