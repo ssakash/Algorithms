@@ -1,5 +1,12 @@
 #include <iostream>
 
+enum class ListOperation : int
+{
+	Insert = 1,
+	Delete,
+	Print
+};
+
 class node {
 	int element;
 	node* next;
@@ -105,32 +112,46 @@ public:
 
 int main()
 {
-	linked_list list; int choice , variable; char exit = 'y';
+	linked_list list;
+	int variable;
+	int command;
+	char choice = 'y';
 
-	while (exit == 'y' || exit == 'Y')
+	while (choice == 'y' || choice == 'Y')
 	{
 		std::cout << "\nWhat do you want to do?\n";
 		std::cout << "1. Insert\n2. Delete\n3. Print\n";
-		std::cin >> choice;
+		std::cin >> command;
 
-		if (choice == 1)
+		switch (static_cast<ListOperation>(command))
 		{
-			std::cout << "\n" << "What number do you want to insert?";
-			std::cin >> variable;
-			list.Insert(variable);
+		case ListOperation::Insert:
+			{
+				std::cout << "\n" << "What number do you want to insert?";
+				std::cin >> variable;
+				list.Insert(variable);
+				break;
+			}
+
+		case ListOperation::Delete:
+			{
+				std::cout << "\n" << "What number do you want to delete?";
+				std::cin >> variable;
+				list.Delete(variable);
+				break;
+			}
+
+		case ListOperation::Print:
+		{
+			list.Print(); 
+			break;
 		}
 
-		if (choice == 2)
-		{
-			std::cout << "\n" << "What number do you want to delete?";
-			std::cin >> variable;
-			list.Delete(variable);
+		default: 
+			std::cout << "\n Unknown command detected!\n";
 		}
-
-		if (choice == 3) list.Print();
-
 		std::cout << "Do you want to continue with more list operations? Y/N?\n";
-		std::cin >> exit;
+		std::cin >> choice;
 	}
 	system("pause");
 	return 0;
