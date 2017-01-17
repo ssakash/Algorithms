@@ -20,6 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\LinkedList.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Main.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{36B966DF-25CA-47C2-8015-54F0876AA491}</ProjectGuid>

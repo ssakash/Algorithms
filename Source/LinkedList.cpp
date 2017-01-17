@@ -110,7 +110,7 @@ public:
 	}
 };
 
-int main()
+int LinkedList()
 {
 	linked_list list;
 	int variable;
