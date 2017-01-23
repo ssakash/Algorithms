@@ -1,4 +1,5 @@
 #include <iostream>
+#include "PerformanceMonitor.h"
 
 enum class ListOperation : int
 {
@@ -112,6 +113,7 @@ public:
 
 int LinkedList()
 {
+	PerformanceMonitor monitor;
 	linked_list list;
 	int variable;
 	int command;
@@ -123,6 +125,7 @@ int LinkedList()
 		std::cout << "1. Insert\n2. Delete\n3. Print\n";
 		std::cin >> command;
 
+		monitor.StartProfiling();
 		switch (static_cast<ListOperation>(command))
 		{
 		case ListOperation::Insert:
@@ -150,6 +153,7 @@ int LinkedList()
 		default: 
 			std::cout << "\n Unknown command detected!\n";
 		}
+		monitor.StopProfiling();
 		std::cout << "Do you want to continue with more list operations? Y/N?\n";
 		std::cin >> choice;
 	}
