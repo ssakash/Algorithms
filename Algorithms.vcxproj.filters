@@ -27,12 +27,18 @@
     <ClCompile Include="Source\PerformanceMonitor.cpp">
       <Filter>Source Files\Algorithms</Filter>
     </ClCompile>
+    <ClCompile Include="Source\InsertionSort.cpp">
+      <Filter>Source Files\Algorithms</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Main.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\PerformanceMonitor.h">
+      <Filter>Source Files\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common.h">
       <Filter>Source Files\Algorithms</Filter>
     </ClInclude>
   </ItemGroup>

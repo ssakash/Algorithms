@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Common.h"
 #include "PerformanceMonitor.h"
 
 enum class ListOperation : int
@@ -119,6 +120,7 @@ int LinkedList()
 	int command;
 	char choice = 'y';
 
+	CLEAR_SCREEN();
 	while (choice == 'y' || choice == 'Y')
 	{
 		std::cout << "\nWhat do you want to do?\n";
@@ -157,6 +159,5 @@ int LinkedList()
 		std::cout << "Do you want to continue with more list operations? Y/N?\n";
 		std::cin >> choice;
 	}
-	system("pause");
 	return 0;
 }

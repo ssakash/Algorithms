@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\InsertionSort.cpp" />
     <ClCompile Include="Source\LinkedList.cpp" />
     <ClCompile Include="Source\Main.cpp" />
     <ClCompile Include="Source\PerformanceMonitor.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Common.h" />
     <ClInclude Include="Source\Main.h" />
     <ClInclude Include="Source\PerformanceMonitor.h" />
   </ItemGroup>
