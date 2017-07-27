@@ -1,29 +1,17 @@
-#include "Main.h"
-#include <iostream>
+#include "Common.h"
+#include "Sorting.h"
 
-void ExecuteProgram(Programs program)
-{
-	switch (program)
-	{
-	case Programs::LinkedList:
-		LinkedList(); break;
-	case Programs::InsertionSort:
-		InsertionSort(); break;
-	default:
-		std::cout << "Unknown program requested!";
-	}
-}
 
 int main()
 {
-	std::cout << "Which program do you want to execute?\n";
-	std::cout << "1. Linked List\n";
-	std::cout << "2. Insertion Sort\n";
+	int x;
+	std::cout << "Which sorting do you want to do?" << "\n1/ Insertion Sort\n";
+	std::cin >> x;
 
-	int choice;
-	std::cin >> choice;
+	Sorting program(static_cast<sorting_method>(x));
+	program.Sort();
+	program.PrintResult();
 
-	ExecuteProgram(static_cast<Programs>(choice));
 	SYSTEM_PAUSE();
 	return 0;
 }

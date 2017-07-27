@@ -19,15 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\InsertionSort.cpp" />
-    <ClCompile Include="Source\LinkedList.cpp" />
     <ClCompile Include="Source\Main.cpp" />
     <ClCompile Include="Source\PerformanceMonitor.cpp" />
+    <ClCompile Include="Source\Sorting Algorithms\InsertionSort.cpp" />
+    <ClCompile Include="Source\Sorting.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Common.h" />
-    <ClInclude Include="Source\Main.h" />
     <ClInclude Include="Source\PerformanceMonitor.h" />
+    <ClInclude Include="Source\Sorting.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{36B966DF-25CA-47C2-8015-54F0876AA491}</ProjectGuid>

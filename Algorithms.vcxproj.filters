@@ -16,30 +16,33 @@
     <Filter Include="Source Files\Algorithms">
       <UniqueIdentifier>{8d732545-49d2-44c0-94d9-a436d03edaf4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Sorting">
+      <UniqueIdentifier>{7c001a63-6269-4529-b513-aef6932dd748}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\LinkedList.cpp">
-      <Filter>Source Files\Algorithms</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Source\PerformanceMonitor.cpp">
       <Filter>Source Files\Algorithms</Filter>
     </ClCompile>
-    <ClCompile Include="Source\InsertionSort.cpp">
-      <Filter>Source Files\Algorithms</Filter>
+    <ClCompile Include="Source\Sorting.cpp">
+      <Filter>Source Files\Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Sorting Algorithms\InsertionSort.cpp">
+      <Filter>Source Files\Sorting</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Main.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="Source\PerformanceMonitor.h">
       <Filter>Source Files\Algorithms</Filter>
     </ClInclude>
     <ClInclude Include="Source\Common.h">
       <Filter>Source Files\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Sorting.h">
+      <Filter>Source Files\Sorting</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
